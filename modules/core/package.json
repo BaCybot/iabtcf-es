@@ -1,6 +1,6 @@
 {
   "name": "@iabtechlabtcf/core",
-  "version": "1.5.8",
+  "version": "1.5.10",
   "description": "Ensures consistent encoding and decoding of TC Signals for the iab. Transparency and Consent Framework (TCF).",
   "author": "Mayank Mishra <mayank@iabtechlab.com>",
   "homepage": "https://iabtcf.com/",
@@ -25,10 +25,11 @@
     "debug": "ndb mocha --no-timeouts",
     "serve:cov": "npx http-server ./coverage/",
     "test": "mocha",
-    "test-cov": "rm -rf coverage; nyc --reporter=html mocha"
+    "test-cov": "rm -rf coverage; nyc --reporter=html mocha",
+    "test-ci": "mocha --reporter mocha-junit-reporter"
   },
   "devDependencies": {
-    "@iabtechlabtcf/testing": "1.5.8",
+    "@iabtechlabtcf/testing": "1.5.10",
     "@istanbuljs/nyc-config-typescript": "^0.1.3",
     "@types/sinon": "^10.0.11",
     "@types/sinon-chai": "3.2.8",
